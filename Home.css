@@ -14,7 +14,14 @@
     --orange:#faa307;
     --selectiveyellow:#ffba08;
 }
-
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 * {
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
@@ -50,7 +57,7 @@ nav {
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    border-radius: 0 0 20px 20px;
+    border-radius: 10px 20px;
     background: linear-gradient(40deg, #53ff98, #5aadff, #5f41f5);
     
 }
@@ -582,6 +589,42 @@ footer {
     .about{
         width: 100%;
         text-align: center;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 30px 10px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 10px;
     }
 }
 
